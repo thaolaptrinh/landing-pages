@@ -1,0 +1,46 @@
+.guide {
+    margin-bottom: 248px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 80px;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 450px;
+        padding-left: 50px;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        margin-bottom: 33px;
+    }
+
+    &__image {
+        padding-right: 40px;
+    }
+
+    @media screen and (max-width: 991.98px) {
+        margin-bottom: 70px;
+
+        &__container {
+            padding: 0 30px;
+        }
+
+        &__content {
+            width: 100%;
+            max-width: 100%;
+            padding-left: 0;
+        }
+
+        &__image {
+            display: none;
+        }
+    }
+}

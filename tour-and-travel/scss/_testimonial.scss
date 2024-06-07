@@ -1,0 +1,93 @@
+.testimonial {
+    margin-bottom: 270px;
+
+    @media screen and (max-width: 1023.98px) {
+        margin-bottom: 150px;
+    }
+
+    &__container {
+        padding-left: 50px;
+    }
+
+    &__header {
+        margin-bottom: 60px;
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        gap: 0 184px;
+    }
+
+    &__content {
+        max-width: 450px;
+        width: 100%;
+    }
+
+    &__rating {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        color: $primary-color;
+    }
+
+    &__desc {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    &__author {
+        color: #000000;
+    }
+
+    &__name {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__job {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__slider {
+        position: relative;
+
+        &-action {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: white;
+            padding-top: 20px;
+            padding-left: 30px;
+            border-top-left-radius: 10px;
+            display: flex;
+            gap: 0 20px;
+        }
+
+        &-pre,
+        &-next {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #000000;
+            border: 2px solid currentColor;
+        }
+
+    }
+
+    @media screen and (max-width: 991.98px) {
+        &__content {
+            max-width: 100%;
+        }
+
+        &__slider {
+            display: none;
+        }
+    }
+}

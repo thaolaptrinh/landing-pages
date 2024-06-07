@@ -1,0 +1,101 @@
+.story {
+    margin-bottom: 271px;
+
+    @media screen and (max-width: 1023.98px) {
+        margin-bottom: 150px;
+    }
+
+    &__container {
+        padding: 0 50px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+
+    &__more {
+        color: $primary-color;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px 25px;
+    }
+
+
+    &__item {
+        &-header {
+            max-height: 231px;
+            height: 100%;
+            border-radius: 10px 10px 0 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+                object-position: top;
+            }
+        }
+
+        &-body {
+            padding-top: 10px;
+            padding-bottom: 23px;
+
+            h3 {
+                font-size: 19px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 13px;
+                line-height: 173%;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                color: $gray;
+                line-height: 173%;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;
+            }
+        }
+
+        &-readmore {
+            color: $primary-color;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: auto;
+        }
+    }
+
+
+    @media screen and (max-width: 991.98px) {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 575.98px) {
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

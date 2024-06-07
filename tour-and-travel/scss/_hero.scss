@@ -1,0 +1,85 @@
+.hero {
+    margin-bottom: 270px;
+
+    &__container {
+        padding-top: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        width: 100%;
+    }
+
+    &__heading {
+        font-size: 64px;
+        margin-bottom: 70px;
+    }
+
+    &__caption {
+        font-size: 22px;
+        font-weight: 600;
+        color: $primary-text-color;
+        margin-bottom: 48px;
+        padding-bottom: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 32px;
+            height: 2px;
+            background-color: $primary-text-color;
+        }
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        &-image {
+            transform: translateX(85px);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        &__content {
+            width: 100%;
+            max-width: 470px;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 75px;
+
+        &__container {
+            padding-left: 30px;
+            padding-right: 30px;
+            flex-direction: column;
+            gap: 50px 0;
+        }
+
+        &__image {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        &__heading {
+            font-size: 50px;
+            margin-bottom: 70px;
+        }
+    }
+
+    @media screen and (max-width: 575.98px) {
+        &__form {
+            grid-template-columns: 1fr;
+        }
+    }
+}
